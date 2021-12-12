@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3 id="name">Chaitanya</h3>
+    <button onclick="calvowel()">Calculate Vowels</button>
+    <!-- <input type="text" disabled id="display"> -->
+    <p id="display"></p>
+    <button><a href="https://charlie0560.github.io/LIFE_Charlie/">Go to the repository</a></button>
+    <script>
+      function calvowel() {
+        let name = document.getElementById("name").innerText;
+        let c, i;
+        for (let i = 0; i <= name.length - 1; i++) {
+          c = name[i];
+          if (c == "a" || c == "e" || c == "i" || c == "o" || c == "u") {
+            console.log(c);
+          } else {
+            console.log("no vowels are in your name");
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

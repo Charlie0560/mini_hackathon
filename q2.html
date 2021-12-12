@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    p=100
+    <button onclick=findzeroes()>Print zeroes</button>
+    <p id="display"></p>
+    <script>
+      function findzeroes() {
+        let n = 100;
+        console.log(n);
+        if (n < 0) return -1;
+
+        let count = 0;
+
+        for (let i = 5; Math.floor(n / i) >= 1; i *= 5)
+          count += Math.floor(n / i);
+
+        document.getElementById("display").innerHTML =
+          "Count of 0s in " + n + "! is " + count;
+        console.log(count);
+        return count;
+      }
+
+      // console.log(findzeroes)
+    </script>
+  </body>
+</html>
